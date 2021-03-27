@@ -22,22 +22,18 @@ public class GM : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Instantiate(bbNoPit, new Vector3(0, 0, 40), bbNoPit.rotation);
-        Instantiate(bbNoPit, new Vector3(0, 0, 42), bbNoPit.rotation);
-
-        Instantiate(bbWPit, new Vector3(0, 0, 44), bbWPit.rotation);
-        Instantiate(bbWPit, new Vector3(0, 0, 46), bbWPit.rotation);
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (zScenePos < 120)
+        /*if (zScenePos < 120)
         {
             Instantiate(bbNoPit, new Vector3(0, 0, zScenePos), bbNoPit.rotation);
-            zScenePos += 2;
+            zScenePos += 4;
         }
+        */
 
         timeTotal += Time.deltaTime;
 

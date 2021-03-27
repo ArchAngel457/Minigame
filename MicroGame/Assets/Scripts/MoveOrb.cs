@@ -78,7 +78,16 @@ public class MoveOrb : MonoBehaviour
 
         if(other.gameObject.name == "Exit")
         {
-            GM.lvlCompStatus = "Success!";
+            SceneManager.LoadScene("Runner2");
+        }
+
+        if(other.gameObject.name == "Exit2" )
+        {
+            SceneManager.LoadScene("Runner3");
+        }
+
+        if(other.gameObject.name == "Exit3")
+        {
             SceneManager.LoadScene("LevelComp");
         }
 
